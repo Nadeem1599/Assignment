@@ -1,0 +1,60 @@
+
+Ans:Q2
+--------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Check Whether you are eligible for vaccine or not <br></h3>
+<h3>
+    Please Select your age <br>
+</h3>
+
+<input type="date" id="myDate" value="2014-02-09">
+
+<p>Click the button to get the date of the date field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in IE 11 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDate").value;
+  document.getElementById("demo").innerHTML = x;
+
+
+
+  var dob = new Date(x);  
+
+    var month_diff = Date.now() - dob.getTime();  
+      
+   
+    var age_dt = new Date(month_diff);   
+      
+      
+    var year = age_dt.getUTCFullYear();  
+      
+ 
+    var age = Math.abs(year - 1970);  
+      
+    document.write("Age of the date entered is : " + age + " years <br>");  
+
+    if(age>= 18 && age<=44)
+    {
+        confirm("You are Eligible for vaccine Select Yes to Register")+true(window.open("https://selfregistration.cowin.gov.in"));
+       
+        }
+        else{
+            document.write("you are not eligible for vaccine<br>")
+          
+    }
+}
+</script>
+
+</body>
+</html>

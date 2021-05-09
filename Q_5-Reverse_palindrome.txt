@@ -1,0 +1,54 @@
+
+Ans:Q5
+----------------------------------------------------------
+
+
+function palindromeFun (str )  
+{  
+ 
+const arrValue = string.split ('');  
+  
+
+const reveArrVal = arrValue.reverse();   
+  
+ 
+const revString = reveArrVal.join('');  
+  
+if (string == revString)  
+{  
+alert('It is a Palindrome string ');  
+}  
+else {  
+alert (' It is not a Palindrome string' );  
+}  
+}  
+
+const string = prompt( (ReverseString("SkillSanta")));  
+const value = palindromeFun (string); 
+console.log(value);  
+
+function ReverseString(str) {
+  
+    
+    if(!str || str.length < 2 || 
+            typeof str!== 'string') 
+{
+        return 'Not valid'; 
+    }
+      
+    
+    const revArray = [];
+    const length = str.length - 1;
+      
+   
+    for(let i = length; i >= 0; i--)
+ {
+        revArray.push(str[i]);
+    }
+      
+    
+    return revArray.join('');
+}
+
+
+document.write(ReverseString("SkillSanta"))

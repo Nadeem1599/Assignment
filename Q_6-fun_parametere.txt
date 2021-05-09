@@ -1,0 +1,16 @@
+
+Ans:Q6
+-------------------------------------------------------
+
+
+
+function addContact(id, refreshCallback) {
+    refreshCallback();
+ 
+}
+
+function refreshContactList() {
+    document.write('Hello World');
+}
+
+addContact(1, refreshContactList);

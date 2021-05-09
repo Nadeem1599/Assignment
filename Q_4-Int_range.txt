@@ -1,0 +1,14 @@
+
+Ans:Q4
+-------------------------------------------------------------
+
+const num1 = parseFloat(prompt("Enter your number: "));
+
+if(num1>= 50 && num1<=100)
+{
+  document.write("Your number is between 50-100");
+}
+else
+{
+document.write(" please enter the number between 50-100"+num1<b);
+}
